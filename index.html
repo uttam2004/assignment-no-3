@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment No-3</title>
+    <!-- using fontawosome kit in my project -->
+    <script
+      src="https://kit.fontawesome.com/f9b817f474.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font sora embaded-01-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font poppins embaded-02-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- internal css -->
+    <style>
+      .sora-font {
+        font-family: "Sora", sans-serif;
+      }
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- tailwind css cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header
+      class="mb-20 sora-font bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]"
+    >
+      <section class="md:container md:mx-auto">
+        <!--navbar -->
+        <nav class="mb-10 max-md:border border-b-[#179800]">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <img
+                class="md:w-36 md:h-14 w-20 h-8"
+                src="assets/logo-header.png"
+                alt=""
+              />
+              <img src="assets/" alt="" />
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="max-md:hidden space-x-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="btn btn-outline btn-success text-lg py-2 px-7">
+                  Login
+                </button>
+                <button
+                  class="btn btn-success bg-[#179800] text-white py-2 px-7 text-lg"
+                >
+                  Register
+                </button>
+              </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-36 mr-24 w-32 p-2 shadow"
+                  >
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+          <!-- title section -->
+          <div class="text-center px-3 mb-6">
+            <h1 class="mb-5 text-4xl font-medium">
+              Freshness
+              <span class="text-[#179800]"
+                >You Can <br />
+                Count</span
+              >
+              On, Prices You’ll Love!
+            </h1>
+            <p class="text-lg">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry <br />
+              staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <img
+            class="md:max-w-screen-md md:max-h-screen  mx-auto"
+            src="assets/hero-vegetables.png"
+            alt=""
+          />
+        </section>
+      </section>
+    </header>
+    <main>
+      <!-- Services -->
+      <section class="mb-20 sora-font md:container md:mx-auto">
+        <h2 class="text-[#179800] text-3xl font-medium mb-8 px-4">Services</h2>
+        <!-- service items -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-4">
+          <!-- service 1 -->
+          <div class="justify-items-center text-center bg-[#EFEBE3] p-6 rounded-lg space-y-4">
+            <img class="bg-white rounded-full p-3" src="assets/service.png" alt="">
+            <h4 class="text-[#111111] text-lg font-medium">24/7 Services</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          </div>
+          <div class="justify-items-center text-center bg-[#EFEBE3] p-6 rounded-lg space-y-4">
+            <img class="bg-white rounded-full p-3" src="assets/delivery.png" alt="">
+            <h4 class="text-[#111111] text-lg font-medium">Fast Delivery</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          </div>
+          <div class="justify-items-center text-center bg-[#EFEBE3] p-6 rounded-lg space-y-4">
+            <img class="bg-white rounded-full p-3" src="assets/healthy.png" alt="">
+            <h4 class="text-[#111111] text-lg font-medium">Healthy Products</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
